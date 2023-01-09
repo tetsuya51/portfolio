@@ -1,0 +1,207 @@
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+      --biggest-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+      --tiny-font-size: .688rem;
+    }
+  }
+
+
+  /* responsive Navbar */
+
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .burgerList {
+        overflow: hidden;
+        position: fixed;
+        opacity: 0.9;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(2px);
+        height: 100vh;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.3em;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .burgerList {
+        display: block;
+    }
+    .navbar a {
+        color: var(--text-color);
+    }
+    .mobile-menu {
+        position : fixed ;
+        margin-left: 0;
+    }
+    .imageSticky {
+        position: sticky;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .burgerList {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1020px ) {
+    .homeDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+
+    }
+    .homeInfo {
+        text-align: center;
+        margin: 50px;
+        padding: 10px;
+    }
+    .home3 , .homeDescription {
+        margin-top: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+/*  Responsive MAIN   */
+
+
+@media screen and (max-width: 650px) {
+    .homeDiv {
+        display: grid;
+    }
+    .imgageDiv {
+        width: 150px;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lineBlack {
+        height: 1px;
+        width: 55%;
+        margin: 0px auto;
+        background-color: #413709;
+        box-shadow: 1px 2px 1px black;
+    }
+}
+
+/*    Responsive Skills   */  
+
+@media screen and (max-width: 650px) {
+    .skillsSection .bar {
+        display: none;
+    }
+
+    .btn{
+        text-indent:-999em;
+    }
+
+    #responsiveBTN {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #responsiveBTN2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .projectChess {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alignImageText {
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+/*  Footer responsive    */
+
+@media (max-width: 650px) {
+
+	.footer-distributed{
+		padding: 20px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: auto;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 20px;
+	}
+
+	.footer-distributed form{
+		margin-top: 15px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
